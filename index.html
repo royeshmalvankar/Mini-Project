@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my daily planner</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>MY Daily Planner</h1>
+    <div>
+      <form>
+        <label for="">Task</label><br />
+        <input id="task" type="text" placeholder="Enter Task" /><br />
+        <label for="">Status</label><br />
+        <select id="status">
+          <option value="pending">Pending</option>
+          <option value="iscompleted">Completed</option>
+        </select>
+        <input type="submit" />
+      </form>
+
+      <form id="searchForm">
+        <label for="searchInput">Search Task</label><br />
+        <input type="text" id="searchInput" placeholder="Search tasks..." />
+      <input type="submit" />
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Status</th>
+            <th type="checkbox">Checkbox</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
+<script src="record.js"></script>
